@@ -3,63 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Not Wordle</title>
+  <title>Professional Resume</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      background-color: #121213;
-      color: white;
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-    h1 {
-      margin-bottom: 20px;
-    }
-    #board {
-      display: grid;
-      grid-template-rows: repeat(6, 1fr);
-      gap: 10px;
-    }
-    .row {
-      display: flex;
-      gap: 10px;
-    }
-    .cell {
-      width: 50px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 2px solid #3a3a3c;
-      font-size: 24px;
-      text-transform: uppercase;
-      font-weight: bold;
-    }
-    .green { background-color: #538d4e; color: white; }
-    .yellow { background-color: #b59f3b; color: white; }
-    .gray { background-color: #3a3a3c; color: white; }
-    input {
-      margin-top: 20px;
-      padding: 10px;
-      font-size: 18px;
-      text-transform: uppercase;
-    }
-    button {
-      padding: 10px;
-      margin-left: 10px;
-      font-size: 18px;
-    }
-    #message {
-      margin-top: 20px;
-      font-size: 20px;
-      color: lightgreen;
-    }
-  </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -77,77 +23,102 @@
       </div>
     </div>
   </nav>
-  <h1>Not Wordle</h1>
-  <h2>(because it's cooler than Wordle)</h2>
-  <div id="board"></div>
-  <div>
-    <input type="text" id="guessInput" maxlength="5" autofocus>
-    <button onclick="submitGuess()">Guess</button>
+
+  <div class="container mt-5">
+    <h1 class="text-center">Chase Fisher Resume</h1>
+    <hr>
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Brigham Young University – Pre-Business</strong>, Provo, UT</li>
+        <li>Information Systems, Expected Graduation: April 2027</li>
+        <li>GPA: 3.00 / 4.00</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <strong>Secretary, Receptionist, and Legal Assistant</strong>, Fisher & Hunter Law Firm, St. George, UT (Feb 2018 – May 2021)
+          <ul>
+            <li>Managed receptionist responsibilities to allow the business to run more efficiently.</li>
+            <li>Organized and prepared correspondence for the attorneys.</li>
+            <li>Communicated directly with clients and courts.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Rental Homes Assistant</strong>, Slate Ridge Investments, LLC, St. George, UT (Feb 2018 – May 2021)
+          <ul>
+            <li>Participated in tenant management for rental units.</li>
+            <li>Assisted in maintenance and equipment repair, increasing tenant satisfaction.</li>
+            <li>Provided landscaping services and unit improvements for a better living space.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Rental Repairs and Problem-Solving Projects</strong>, Slate Ridge, St. George, UT (July 2020 – May 2021, Aug 2021)
+          <ul>
+            <li>Built the job description from the ground up.</li>
+            <li>Learned and performed electrical repairs, including light switches, fixtures, outlets, and fans.</li>
+            <li>Installed cabinets, doors, blinds, windows, and security cameras.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Seasonal Home Maintenance</strong>, St. George, UT (May 2018 – Sept 2019)
+          <ul>
+            <li>Provided routine maintenance of interior and exterior of seasonal homes.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Leadership & Service</h2>
+      <ul>
+        <li>
+          <strong>HEFY Volunteer</strong>, Tamboril, Dominican Republic (June 2021)
+          <ul>
+            <li>Provided service to the community by building a preschool for the city of Tamboril.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Student Council</strong>, St. George, UT
+          <ul>
+            <li><strong>Junior Activities Representative</strong> (Apr 2019 – Apr 2020): Planned and organized Junior Prom and fundraisers.</li>
+            <li><strong>Student Body President</strong> (Apr 2020 – May 2021): Helped unify the school, organized activities, and raised $15,000 for a teacher's granddaughter diagnosed with leukemia.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>National Honor Society</strong>, St. George, UT (Aug 2018 – May 2021)
+          <ul>
+            <li>Provided 40 hours of service during high school.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Switchpoint Volunteer</strong>, St. George, UT (Aug 2018 – May 2021)
+          <ul>
+            <li>Cooked and served meals for residents at a local shelter.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Volunteer Golf Instructor</strong>, First Tee, St. George, UT (Mar 2018 – May 2021)
+          <ul>
+            <li>Taught children core values like respect, responsibility, and confidence through golf.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Awards, Skills & Interests</h2>
+      <ul>
+        <li>Earned the rank of Eagle Scout by collecting and donating over 450 pounds of clothing for youth in the Dominican Republic.</li>
+        <li>Proficient in Word, Excel, PowerPoint, Bill4Time, and online filing systems.</li>
+        <li>Efficient, organized, and detail-oriented with strong communication skills.</li>
+        <li>Fast learner and multi-tasker with a service-oriented mindset.</li>
+      </ul>
+    </section>
   </div>
-  <div id="message"></div>
 
-  <script>
-    const wordList = ['apple', 'grape', 'plant', 'brave', 'stone', 'crane', 'ozone'];
-    const secretWord = wordList[Math.floor(Math.random() * wordList.length)];
-    const board = document.getElementById('board');
-    let currentRow = 0;
-
-    for (let i = 0; i < 6; i++) {
-      const row = document.createElement('div');
-      row.classList.add('row');
-      for (let j = 0; j < 5; j++) {
-        const cell = document.createElement('div');
-        cell.classList.add('cell');
-        row.appendChild(cell);
-      }
-      board.appendChild(row);
-    }
-
-    function submitGuess() {
-      const input = document.getElementById('guessInput');
-      const guess = input.value.toLowerCase();
-      if (guess.length !== 5 || !/^[a-zA-Z]+$/.test(guess)) {
-        alert('Enter a valid 5-letter word.');
-        return;
-      }
-
-      const row = board.children[currentRow];
-      const letterCount = {};
-      for (let ch of secretWord) {
-        letterCount[ch] = (letterCount[ch] || 0) + 1;
-      }
-
-      for (let i = 0; i < 5; i++) {
-        row.children[i].innerText = guess[i];
-        if (guess[i] === secretWord[i]) {
-          row.children[i].classList.add('green');
-          letterCount[guess[i]]--;
-        }
-      }
-
-      for (let i = 0; i < 5; i++) {
-        if (guess[i] !== secretWord[i]) {
-          if (secretWord.includes(guess[i]) && letterCount[guess[i]] > 0) {
-            row.children[i].classList.add('yellow');
-            letterCount[guess[i]]--;
-          } else {
-            row.children[i].classList.add('gray');
-          }
-        }
-      }
-
-      if (guess === secretWord) {
-        document.getElementById('message').innerText = 'Congratulations! You guessed it!';
-        document.getElementById('guessInput').disabled = true;
-      } else if (currentRow === 5) {
-        document.getElementById('message').innerText = `Out of guesses! The word was "${secretWord.toUpperCase()}".`;
-        document.getElementById('guessInput').disabled = true;
-      } else {
-        currentRow++;
-        input.value = '';
-        input.focus();
-      }
-    }
-  </script>
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Chase Fisher. All rights reserved.</p>
+  </footer>
 </body>
 </html>
